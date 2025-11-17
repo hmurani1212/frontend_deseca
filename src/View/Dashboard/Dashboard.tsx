@@ -106,8 +106,6 @@ const Dashboard: React.FC = () => {
 
     // Subscribe to engagement chart updates
     const handleEngagementChartUpdate = (data: SocketUpdateData): void => {
-
-      console.log('what is the data', data)
       // Silently update chart without causing page reload
       if (!data.engagement_chart || !Array.isArray(data.engagement_chart)) {
         return;
