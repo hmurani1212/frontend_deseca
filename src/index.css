@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for navigation links */
+.navLinkCustom {
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+}
+
+.navLinkCustom:hover {
+  background-color: rgba(3, 169, 243, 0.1);
+}
+
+.navLinkCustom.active {
+  background-color: rgba(3, 169, 243, 0.1);
+  color: #03a9f3;
+  font-weight: 600;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Custom Drawer Scroll Styles */
+.customDrwerScroll::-webkit-scrollbar-thumb {
+  background-color: #AAAAAA !important;
+  width: 6px !important;
+  border-radius: 10px;
+}
+
+.customDrwerScroll::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+.customDrwerScroll::-webkit-scrollbar {
+  width: 6px !important;
+  height: 6px;
+  display: none;
+}
+
+.customDrwerScroll:hover::-webkit-scrollbar {
+  display: block;
+  width: 6px !important;
+}
+
